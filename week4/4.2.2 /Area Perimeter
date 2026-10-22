@@ -1,0 +1,19 @@
+#include <iostream>
+#include <random>
+#include <cmath>
+#include <string>
+#include <vector>
+#include <cstdlib>
+#include <sstream>
+using namespace std;
+void AreaPerimeter (double n, double x, double& a , double& p){
+    a = x*n;
+    p = x+n;
+}
+int main(){
+double a , b, Area , Perimeter;
+ cin >> a>> b ;
+  AreaPerimeter(a, b , Area , Perimeter);
+  cout << Area <<  " " << Perimeter <<" ";
+
+}
