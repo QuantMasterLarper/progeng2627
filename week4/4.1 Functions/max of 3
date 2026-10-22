@@ -1,0 +1,31 @@
+#include <iostream>
+#include <random>
+#include <cmath>
+#include <string>
+#include <vector>
+#include <cstdlib>
+#include <sstream>
+using namespace std;
+int Biggest3 (int a, int  b, int c){
+if (a >b){
+ if (a>c){
+    return a;
+ }
+
+ }
+ else{
+    if (b>c){
+        return b;
+    }
+    else{
+        return c;
+    }
+ }
+return 0;
+}
+int main() {
+    int a,b,c;
+    cin >> a >> b >> c;
+cout << Biggest3  ( a , b ,c);
+   
+}
