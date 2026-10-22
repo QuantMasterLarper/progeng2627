@@ -1,0 +1,19 @@
+#include <iostream>
+#include <random>
+#include <cmath>
+#include <string>
+#include <vector>
+#include <cstdlib>
+#include <sstream>
+using namespace std;
+void AreaPerimeter (int n, int x, int& a , int& p){
+    a = n/x;
+    p = n%x;
+}
+int main(){
+int a , b, div , remainder;
+ cin >> a>> b ;
+  AreaPerimeter(a, b , div , remainder);
+  cout << div <<  " " << remainder <<" ";
+
+}
