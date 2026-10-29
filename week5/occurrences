@@ -1,0 +1,35 @@
+#include <iostream>
+#include <random>
+#include <cmath>
+#include <string>
+#include <vector>
+#include <cstdlib>
+#include <sstream>
+using namespace std;
+
+
+int main(){
+    vector<int> array;
+    int n =0;
+    int in = 0;
+    cin >> n ;
+    for( int i =0; i< n; i++)
+{
+    cout<< "Please enter the value to push\n";
+cin >> in;
+
+array.push_back(in);
+
+} 
+
+cout << "Select number  to check occurancies\n";
+int filter;
+int sum =0;
+cin>> filter;
+for(int i=0; i<n;i++){
+    if (array[i]==filter){
+        sum++;
+    }
+}
+cout<< "There are "<< sum << " number of occrancies of "<< filter;
+}
