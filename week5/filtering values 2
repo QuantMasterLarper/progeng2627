@@ -1,0 +1,46 @@
+#include <iostream>
+#include <random>
+#include <cmath>
+#include <string>
+#include <vector>
+#include <cstdlib>
+#include <sstream>
+using namespace std;
+
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <iostream>
+#include <vector>
+
+// note: const before std::vector<double>
+// and the & afterwards
+
+void filter_v(const std::vector<double>& vin, double t, std::vector<double>& vout){
+
+int idx=-1;
+    for(int i = 0; i < vin.size(); i++){
+       if ( vin[i] <t){
+       vout.push_back(vin[i]);
+       }
+    }
+
+}
+
+int main(){
+    std::vector<double> v;
+    int n =0;
+    int sub = 0;
+    cin >> n;
+    for (int  i=0; i<n;i++){
+        cin>> sub;
+    v.push_back(sub);
+    }
+    std::vector<double> vout;
+    double a ;
+   cin >>  a;
+   filter_v(v,a,vout);
+   for (int i =0; i< vout.size();i++){
+    cout << vout[i] << " ";
+   }
+}
